@@ -1,0 +1,32 @@
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+
+  &__item {
+    background-color: #ff6060;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px 20px;
+    border-radius: 10px;
+  }
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+
+  &__item {
+    background-color: #ff6060;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px 20px;
+    border-radius: 10px;
+  }
+}

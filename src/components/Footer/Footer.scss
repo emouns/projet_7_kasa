@@ -1,0 +1,20 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #000000;
+  height: 145px;
+  margin-top: auto;
+
+  &__logo {
+    height: 35px;
+  }
+
+  &__text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+  }
+}

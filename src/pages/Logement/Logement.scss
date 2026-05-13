@@ -1,0 +1,98 @@
+.logement {
+  padding: 0 40px 40px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 24px 0;
+    gap: 20px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    color: #ff6060;
+    margin-bottom: 8px;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+
+  &__location {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #ff6060;
+    margin-bottom: 16px;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+
+  &__host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+    flex-shrink: 0;
+
+    @media (max-width: 768px) {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+
+  &__host-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__host-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ff6060;
+    text-align: right;
+    max-width: 120px;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+
+  &__host-img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    @media (max-width: 768px) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &__collapses {
+    display: flex;
+    gap: 30px;
+    margin-top: 24px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 20px 40px;
+  }
+}
