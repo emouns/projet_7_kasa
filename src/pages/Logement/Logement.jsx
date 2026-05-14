@@ -7,10 +7,11 @@ import Collapse from '../../components/Collapse/Collapse'
 import './Logement.scss'
 
 function Logement() {
+  // Récupère l'id dans l'URL → ex: /logement/abc123 donne { id: "abc123" }
   const { id } = useParams()
   const logement = logements.find((l) => l.id === id)
 
-  // Si l'ID n'existe pas → page 404
+  // Si l'ID n'existe pas dans le JSON → page 404
   if (!logement) {
     return <Navigate to="/404" replace />
   }
@@ -40,6 +41,7 @@ function Logement() {
 
       <div className="logement__collapses">
         <Collapse title="Description" content={logement.description} />
+        {/* equipments est un tableau → Collapse affichera une liste à puces */}
         <Collapse title="Équipements" content={logement.equipments} />
       </div>
     </div>

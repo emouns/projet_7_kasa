@@ -6,11 +6,13 @@ function Collapse({ title, content }) {
 
   return (
     <div className="collapse">
+      {/* Clic sur l'en-tête → bascule entre ouvert et fermé */}
       <button
         className="collapse__header"
         onClick={() => setIsOpen(!isOpen)}
       >
         <span className="collapse__title">{title}</span>
+        {/* La flèche tourne via CSS quand --open est présent */}
         <span className={`collapse__arrow ${isOpen ? 'collapse__arrow--open' : ''}`}>
           ▲
         </span>
@@ -18,6 +20,7 @@ function Collapse({ title, content }) {
 
       {isOpen && (
         <div className="collapse__content">
+          {/* Si content est un tableau → liste à puces, sinon simple texte */}
           {Array.isArray(content) ? (
             <ul className="collapse__list">
               {content.map((item, index) => (

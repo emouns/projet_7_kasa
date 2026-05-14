@@ -9,6 +9,7 @@ function Header() {
         <img src={logo} alt="Kasa logo" className="header__logo" />
       </Link>
       <nav className="header__nav">
+        {/* NavLink ajoute automatiquement la classe --active sur le lien de la page courante */}
         <NavLink
           to="/"
           className={({ isActive }) => isActive ? 'header__link header__link--active' : 'header__link'}

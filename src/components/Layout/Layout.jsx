@@ -7,6 +7,7 @@ function Layout() {
   return (
     <div className="layout">
       <Header />
+      {/* Outlet = emplacement où s'affiche la page active (Home, About, etc.) */}
       <main className="layout__main">
         <Outlet />
       </main>

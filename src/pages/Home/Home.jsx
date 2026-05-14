@@ -7,6 +7,7 @@ function Home() {
   return (
     <div className="home">
       <Banner />
+      {/* Une Card par logement du JSON */}
       <section className="home__gallery">
         {logements.map((logement) => (
           <Card key={logement.id} logement={logement} />
