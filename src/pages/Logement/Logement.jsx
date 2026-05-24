@@ -6,10 +6,10 @@ import Tags from '../../components/Tags/Tags'
 import Collapse from '../../components/Collapse/Collapse'
 import './Logement.scss'
 
-function Logement() {
-  // Récupère l'id dans l'URL → ex: /logement/abc123 donne { id: "abc123" }
-  const { id } = useParams()
-  const logement = logements.find((l) => l.id === id)
+function Logement() {  // pas de props//
+ 
+  const { id } = useParams()   //lit l'id directement dans l'URL  ex: /logement/abc123 donne { id: "abc123" }
+  const logement = logements.find((l) => l.id === id) //cherche dans le json//
 
   // Si l'ID n'existe pas dans le JSON → page 404
   if (!logement) {

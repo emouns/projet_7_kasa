@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import './Card.scss'
 
-function Card({ logement }) {
+function Card({ logement }) { //props//
   return (
     // Toute la carte est cliquable → redirige vers la page du logement
     <Link to={`/logement/${logement.id}`} className="card">

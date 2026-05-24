@@ -1,6 +1,6 @@
 import './Rating.scss'
 
-function Rating({ rating }) {
+function Rating({ rating }) {  //props//
   const total = 5
   const note = parseInt(rating) // le JSON renvoie parfois une string, on force en nombre
 

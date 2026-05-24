@@ -3,16 +3,16 @@ import './Carousel.scss'
 
 function Carousel({ pictures }) {
   // index = numéro de la photo affichée en ce moment
-  const [index, setIndex] = useState(0)
+  const [index, setIndex] = useState(0) // React détecte le changement et re-affiche automatiquement la bonne photo
 
-  // Boucle en arrière : si on est sur la 1ère photo on revient à la dernière
+  // si je suis sur photo 0    → je vais à la dernière
   const handlePrev = () => {
-    setIndex(index === 0 ? pictures.length - 1 : index - 1)
+    setIndex(index === 0 ? pictures.length - 1 : index - 1) // sinon je recule d'une photo
   }
 
-  // Boucle en avant : si on est sur la dernière on revient à la 1ère
+  // si je suis sur la dernière je reviens à 0
   const handleNext = () => {
-    setIndex(index === pictures.length - 1 ? 0 : index + 1)
+    setIndex(index === pictures.length - 1 ? 0 : index + 1) /// sinon j'avance d'une photo
   }
 
   return (
