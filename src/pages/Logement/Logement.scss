@@ -28,8 +28,9 @@
   &__location {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
-    color: #ff6060;
+    color: #000000;
     margin-bottom: 16px;
+    text-align: left;
 
     @media (max-width: 768px) {
       font-size: 14px;
@@ -83,8 +84,10 @@
 
   &__collapses {
     display: flex;
-    gap: 30px;
+    gap: 76px;
     margin-top: 24px;
+
+.collapse { flex: 1; }  
 
     @media (max-width: 768px) {
       flex-direction: column;
